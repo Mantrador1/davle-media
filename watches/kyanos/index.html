@@ -261,6 +261,11 @@
   document.querySelectorAll('.strip-nav button').forEach(b => b.addEventListener('click', () => {
     strip.scrollBy({ left: Number(b.dataset.dir) * strip.firstElementChild.offsetWidth, behavior: 'smooth' });
   }));
+  // keep the source of the visit on every Play link (e.g. ?from=instagram_bio), so the Console still sees where buyers came from
+  const from = new URLSearchParams(location.search).get('from');
+  if (from && /^[a-z0-9_]{2,40}$/.test(from)) document.querySelectorAll('a[href*="play.google.com"]').forEach(a => {
+    a.href = a.href.replace('utm_source%3Dwebsite', 'utm_source%3D' + from);
+  });
 </script>
 </body>
 </html>
