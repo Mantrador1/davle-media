@@ -1,0 +1,199 @@
+{
+ "face": "ORICHALKOS",
+ "face_id": "WF_DAVLE_ORICHALKOS",
+ "package": "com.davle.orichalkos",
+ "capture_index": "/opt/factory/faces/WF_DAVLE_ORICHALKOS/build_cw2/capture_index_r7.json",
+ "k11_plan": "/opt/factory/panel/state/marketing/listings/orichalkos/k11_plan.json",
+ "hero_colour": "oltremare",
+ "top_colour": "melanzana",
+ "colours": [
+  {
+   "name": "Oltremare",
+   "tag": "oltremare",
+   "hex": "#0392F5",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_oltremare.png",
+   "dial_webp": "dial_oltremare.webp",
+   "dial_aod": "dial_oltremare_aod.png",
+   "dial_aod_webp": "dial_oltremare_aod.webp",
+   "hero": "hero_oltremare.jpg",
+   "hero_webp": "hero_oltremare.webp",
+   "hero_wide": "hero_wide_oltremare.jpg",
+   "hero_wide_webp": "hero_wide_oltremare.webp"
+  },
+  {
+   "name": "Smaragdi",
+   "tag": "smaragdi",
+   "hex": "#3DDC84",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_smaragdi.png",
+   "dial_webp": "dial_smaragdi.webp",
+   "dial_aod": "dial_smaragdi_aod.png",
+   "dial_aod_webp": "dial_smaragdi_aod.webp"
+  },
+  {
+   "name": "Rubino",
+   "tag": "rubino",
+   "hex": "#FF6B57",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_rubino.png",
+   "dial_webp": "dial_rubino.webp",
+   "dial_aod": "dial_rubino_aod.png",
+   "dial_aod_webp": "dial_rubino_aod.webp"
+  },
+  {
+   "name": "Melanzana",
+   "tag": "melanzana",
+   "hex": "#C08BFF",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_melanzana.png",
+   "dial_webp": "dial_melanzana.webp",
+   "dial_aod": "dial_melanzana_aod.png",
+   "dial_aod_webp": "dial_melanzana_aod.webp",
+   "top": "top_melanzana.jpg",
+   "top_webp": "top_melanzana.webp"
+  },
+  {
+   "name": "Petrolio",
+   "tag": "petrolio",
+   "hex": "#22D8E6",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_petrolio.png",
+   "dial_webp": "dial_petrolio.webp",
+   "dial_aod": "dial_petrolio_aod.png",
+   "dial_aod_webp": "dial_petrolio_aod.webp"
+  },
+  {
+   "name": "Noce",
+   "tag": "noce",
+   "hex": "#F0C674",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_noce.png",
+   "dial_webp": "dial_noce.webp",
+   "dial_aod": "dial_noce_aod.png",
+   "dial_aod_webp": "dial_noce_aod.webp"
+  },
+  {
+   "name": "Nero",
+   "tag": "nero",
+   "hex": "#D8DEE4",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_nero.png",
+   "dial_webp": "dial_nero.webp",
+   "dial_aod": "dial_nero_aod.png",
+   "dial_aod_webp": "dial_nero_aod.webp"
+  }
+ ],
+ "source_jobs": [
+  {
+   "colourway": "oltremare",
+   "job_id": "wfsjob_20261021T193938Z_a1e661a8",
+   "simulation_png_sha256": "fe2ac24089db616ac1eefc9e2e66528eb70a093e84357a12f4a7f6700ef4ebae",
+   "aod_png_sha256": "4cf5630fcce1db415fa720bd464109912f137065233556a90d65f411a7435fa2",
+   "project_sha256": "daf2306e76a5dc9c2a08f86e9fc1b50d83d0d82df34a8b59775a70a5907a3231"
+  },
+  {
+   "colourway": "smaragdi",
+   "job_id": "wfsjob_20261021T194050Z_802dd055",
+   "simulation_png_sha256": "d2545e538bf47a406a64149af6241036a604c4f2f280e8b9ec8e43ae479e5890",
+   "aod_png_sha256": "a48c696b6438464d6952f4682382d22c6ef5166b5708f07cc4df49db8ebe59a8",
+   "project_sha256": "81fd547901e35fdc5b7ed9683c199f64cf35b595717de297492ea16fab42c1b8"
+  },
+  {
+   "colourway": "rubino",
+   "job_id": "wfsjob_20261021T194202Z_67b75b55",
+   "simulation_png_sha256": "614a927d8f6b56aad163d4e194bda71acb4fc4cf5a30fc2001f098715b3dc2bf",
+   "aod_png_sha256": "5314a75b6920f317861a4c2b7a7cdfe76573453ffe9740c356060ca819c37b12",
+   "project_sha256": "05dd0b9f7d8253d4311849f03684cff73454a05ff00a392e78206c0ee28d45c1"
+  },
+  {
+   "colourway": "melanzana",
+   "job_id": "wfsjob_20261021T194320Z_ffe0e6f4",
+   "simulation_png_sha256": "86b45a06b345a95af1d4a5c4d7aa6050c3e55ba7d3a23ad3cd511a8a625addb5",
+   "aod_png_sha256": "f216d7ae333061b56995e5ed83b5d5f659f4b0cf55f810adc774ad6e7c8a3a5c",
+   "project_sha256": "9cb370b8dc674332c3cd9a0d50e6d26a459123f52b157b52f8885c274e04df26"
+  },
+  {
+   "colourway": "petrolio",
+   "job_id": "wfsjob_20261021T194432Z_507539b3",
+   "simulation_png_sha256": "afa682b4932eb4ab348c0389f3b2b85a1d778132e9b42722b911383c7307bc49",
+   "aod_png_sha256": "ad2b9501c46cd7c0f094c4432ea6e1683484847ce9db5dd47a26436aedeef25b",
+   "project_sha256": "21c4b5de2afe2e57111650bf9c0f670295152f8fee176c1d2f225b8e118cdea1"
+  },
+  {
+   "colourway": "noce",
+   "job_id": "wfsjob_20261021T194545Z_ca81f339",
+   "simulation_png_sha256": "6042aff0444e8d5d0bc3352624739655124027779d2dd545917f7e0fccaa63c4",
+   "aod_png_sha256": "185010fce7fa904582f067cff29966bf9f42542cdd0cb46a4c6e3f1d95101561",
+   "project_sha256": "d4265c57465c6f3e41fb55f2c497c26f2aaaf13df03db69ddf4aad734a281cec"
+  },
+  {
+   "colourway": "nero",
+   "job_id": "wfsjob_20261021T194703Z_75162fa6",
+   "simulation_png_sha256": "6666f969b46b2fdc9c4ef5706cd1d33a425d276a3d62924249c0b53f197e2be3",
+   "aod_png_sha256": "c5f0f768b7838570d56002709a6e2d57dbfbde9c7168c80b1400d911f27f0673",
+   "project_sha256": "faaabfb68d6331c87dbef480a514c1cc9820773a62fe0c6fed5180044040cf19"
+  }
+ ],
+ "aod": "per-colour dial_<name>_aod",
+ "aod_source_sha256": null,
+ "scene_params": {
+  "hero": {
+   "scene": "S1",
+   "src_fmt": "4x5",
+   "k": 1.4814814814814814,
+   "body_scale": 0.632,
+   "screen_eq_share_of_width": 0.5,
+   "dial_capture_px_per_card_px": 2.248,
+   "strap_accent_rgb": [
+    3,
+    146,
+    245
+   ],
+   "strap_light_target": 46.0,
+   "jpg_q": 80,
+   "jpg_bytes": 356179,
+   "webp_bytes": 211790,
+   "webp_q": 82
+  },
+  "hero_wide": {
+   "scene": "S1",
+   "src_fmt": "9x16",
+   "k": 1.566,
+   "body_scale": 0.6681,
+   "screen_eq_share_of_width": 0.3058,
+   "dial_capture_px_per_card_px": 2.127,
+   "strap_accent_rgb": [
+    3,
+    146,
+    245
+   ],
+   "strap_light_target": 46.0,
+   "jpg_q": 82,
+   "jpg_bytes": 340446,
+   "webp_bytes": 183758,
+   "webp_q": 82,
+   "crop_x": 365
+  },
+  "top": {
+   "scene": "S4",
+   "src_fmt": "4x5",
+   "k": 1.4814814814814814,
+   "body_scale": 1.0,
+   "screen_eq_share_of_width": 0.3931,
+   "dial_capture_px_per_card_px": 2.863,
+   "strap_accent_rgb": [
+    192,
+    139,
+    255
+   ],
+   "strap_light_target": 55.33,
+   "jpg_q": 62,
+   "jpg_bytes": 357147,
+   "webp_bytes": 354180,
+   "webp_q": 82
+  }
+ },
+ "pipeline": "k11 scene library (slate_v2 compose_v2 + k11lib) rescaled; no text; dial pixels = certified captures; ai_calls=0",
+ "text_free": true
+}

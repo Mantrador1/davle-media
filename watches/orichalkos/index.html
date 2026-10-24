@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAVLE ORICHALKOS — watch face for Wear OS</title>
+<meta name="description" content="DAVLE ORICHALKOS: Bronze hybrid, moon phase, 7 accent colors, four gauges. For round watches with Wear OS 5 or later. Installs on your watch.">
+<meta property="og:title" content="DAVLE ORICHALKOS — watch face for Wear OS"><meta property="og:description" content="DAVLE ORICHALKOS: Bronze hybrid, moon phase, 7 accent colors, four gauges. For round watches with Wear OS 5 or later. Installs on your watch."><meta property="og:image" content="https://davlestudio.com/web/orichalkos/hero_oltremare.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="../../brand/favicon_32.png"><link rel="apple-touch-icon" href="../../brand/apple_touch_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../watches/site.css">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.20/dist/lenis.min.js"></script>
+<script defer src="../../watches/site.js"></script>
+</head>
+<body class="face is-soon" style="--accent:#0392F5"><header class="top"><a class="logo" href="../../watches/"><img src="../../brand/logo_320.png" alt="">DAVLE</a><nav aria-label="Site"><a href="#dial">On the dial</a><a href="#colours">Colours</a></nav></header>
+<main>
+<section class="hero" aria-labelledby="name">
+  <picture class="hero-img"><source media="(max-width: 820px)" srcset="../../web/orichalkos/hero_oltremare.webp"><img src="../../web/orichalkos/hero_wide_oltremare.webp" alt="DAVLE ORICHALKOS on a Galaxy Watch Ultra" width="2400" height="1350" fetchpriority="high"></picture>
+  <div class="wrap hero-txt">
+    <p class="status">Coming soon</p>
+    <h1 id="name" style="--n:10">ORICHALKOS</h1>
+    <p class="lede">ORICHALKOS is named after the mountain copper of Greek legend. Bronze analog hands sweep over a dark, layered dial beside a digital octagon.</p>
+    <div class="where"><strong>This installs on your watch, not your phone.</strong>
+      <p>It needs a round watch with Wear OS 5 or later.</p>
+      <ul class="chips" aria-label="Requirements"><li>Wear OS 5 or later</li><li>Round watches</li><li>Galaxy Watch4 and newer</li><li>Pixel Watch</li></ul></div>
+    <div class="cta"><span class="soon">Coming soon to Google Play</span><a class="after" href="https://www.instagram.com/davlestudio/">Follow DAVLE on Instagram for the release</a></div>
+  </div>
+</section>
+
+<section class="anatomy" id="dial" aria-labelledby="dial-h">
+  <div class="wrap anatomy-in">
+    <div class="stage" aria-hidden="false"><img class="dial-layer" data-i="0" src="../../web/orichalkos/dial_oltremare.webp" alt="ORICHALKOS dial in Oltremare" width="1200" height="1200" loading="eager"><img class="dial-layer" data-i="1" src="../../web/orichalkos/dial_smaragdi.webp" alt="ORICHALKOS dial in Smaragdi" width="1200" height="1200" loading="lazy"><img class="dial-layer" data-i="2" src="../../web/orichalkos/dial_rubino.webp" alt="ORICHALKOS dial in Rubino" width="1200" height="1200" loading="lazy"><img class="dial-layer" data-i="3" src="../../web/orichalkos/dial_melanzana.webp" alt="ORICHALKOS dial in Melanzana" width="1200" height="1200" loading="lazy"><img class="dial-layer" data-i="4" src="../../web/orichalkos/dial_petrolio.webp" alt="ORICHALKOS dial in Petrolio" width="1200" height="1200" loading="lazy"><img class="dial-layer" data-i="5" src="../../web/orichalkos/dial_noce.webp" alt="ORICHALKOS dial in Noce" width="1200" height="1200" loading="lazy"><img class="dial-layer" data-i="6" src="../../web/orichalkos/dial_nero.webp" alt="ORICHALKOS dial in Nero" width="1200" height="1200" loading="lazy"></div>
+    <div class="feats">
+      <h2 id="dial-h">What's on the dial</h2>
+      <ol class="feat-list"><li class="feat"><span>Analog hours and minutes, with a sweeping seconds hand in the accent color</span></li><li class="feat"><span>Digital octagon: hours and minutes in large digits, following your watch&#x27;s 12- or 24-hour setting, plus weekday, day and month</span></li><li class="feat"><span>Heart rate and step count, each with its own gauge ring</span></li><li class="feat"><span>Weather from your watch&#x27;s own weather service: condition, temperature, day high and low, and a rain-chance ring</span></li><li class="feat"><span>Battery level on a segmented ring</span></li><li class="feat"><span>Moon phase</span></li><li class="feat"><span>Distance, estimated from your step count</span></li><li class="feat"><span>One small icon complication slot, empty by default</span></li><li class="feat"><span>Tap shortcuts: steps open your health app; the weather dial or the moon opens your weather app (on watches that include them)</span></li></ol>
+      
+      <div class="colours" id="colours">
+        <h2 id="col-h">7 colours, one setting</h2>
+        <p class="lede-s">7 color themes: Oltremare, Smaragdi, Rubino, Melanzana, Petrolio, Noce and Nero. One setting recolors the rim markers, the four gauge rings and the seconds hand together, and tints the dial plate in every theme except Nero. Change it on the watch: touch and hold the face, then Customize.</p>
+        <ul class="swatches"><li><button type="button" data-i="0" style="--c:#0392F5" aria-pressed="true">Oltremare</button></li><li><button type="button" data-i="1" style="--c:#3DDC84" aria-pressed="false">Smaragdi</button></li><li><button type="button" data-i="2" style="--c:#FF6B57" aria-pressed="false">Rubino</button></li><li><button type="button" data-i="3" style="--c:#C08BFF" aria-pressed="false">Melanzana</button></li><li><button type="button" data-i="4" style="--c:#22D8E6" aria-pressed="false">Petrolio</button></li><li><button type="button" data-i="5" style="--c:#F0C674" aria-pressed="false">Noce</button></li><li><button type="button" data-i="6" style="--c:#D8DEE4" aria-pressed="false">Nero</button></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="aod" id="aod" aria-labelledby="aod-h"><div class="wrap aod-in"><div class="aod-dial"><img class="aod-on" src="../../web/orichalkos/dial_oltremare.webp" alt="" width="1200" height="1200" loading="lazy"><img class="aod-off" src="../../web/orichalkos/dial_oltremare_aod.webp" alt="ORICHALKOS always-on display" width="1200" height="1200" loading="lazy"></div><div><h2 id="aod-h">When you lower your wrist</h2><p class="lede-s">Always-on mode has its own quiet layout: the hour markers and the two main hands.</p></div></div></section>
+<section class="gallery" aria-label="Photos">
+  <div class="wrap"><h2>On the wrist</h2></div>
+  <div class="strip" tabindex="0" aria-label="Photos of ORICHALKOS, scroll sideways"><figure><img loading="lazy" src="../../orichalkos_k11/ig_01.jpg" alt="ORICHALKOS on a Galaxy Watch Ultra" width="1080" height="1350"></figure><figure><img loading="lazy" src="../../orichalkos_k11/ig_02.jpg" alt="ORICHALKOS on a Galaxy Watch Ultra" width="1080" height="1350"></figure><figure><img loading="lazy" src="../../orichalkos_k11/ig_03.jpg" alt="ORICHALKOS on a Galaxy Watch Ultra" width="1080" height="1350"></figure><figure><img loading="lazy" src="../../orichalkos_k11/ig_04.jpg" alt="ORICHALKOS on a Galaxy Watch Ultra" width="1080" height="1350"></figure><figure><img loading="lazy" src="../../orichalkos_k11/ig_05.jpg" alt="ORICHALKOS on a Galaxy Watch Ultra" width="1080" height="1350"></figure><figure><img loading="lazy" src="../../orichalkos_k11/ig_06.jpg" alt="ORICHALKOS on a Galaxy Watch Ultra" width="1080" height="1350"></figure><figure><img loading="lazy" src="../../orichalkos_k11/ig_07.jpg" alt="ORICHALKOS on a Galaxy Watch Ultra" width="1080" height="1350"></figure></div>
+  <div class="wrap"></div>
+</section>
+
+<section class="wrap more" aria-labelledby="more-h"><h2 id="more-h">More from DAVLE</h2><div class="minis"><a class="mini" href="../kyanos/"><img src="../../web/kyanos/dial_blue.webp" alt="" width="1200" height="1200" loading="lazy"><span>KYANOS</span><small>On Google Play</small></a><a class="mini" href="../atraktos/"><img src="../../web/atraktos/dial_orange.webp" alt="" width="1200" height="1200" loading="lazy"><span>ATRAKTOS</span><small>On Google Play</small></a><a class="mini" href="../tachos/"><img src="../../web/tachos/dial_default.webp" alt="" width="1200" height="1200" loading="lazy"><span>TACHOS</span><small>Coming soon</small></a><a class="mini" href="../pyrsos/"><img src="../../web/pyrsos/dial_default.webp" alt="" width="1200" height="1200" loading="lazy"><span>PYRSOS</span><small>Coming soon</small></a><a class="mini" href="../talos/"><img src="../../web/talos/dial_original.webp" alt="" width="1200" height="1200" loading="lazy"><span>TALOS</span><small>Coming soon</small></a></div></section>
+</main>
+<footer class="wrap"><p>DAVLE studio · <a href="../">All watch faces</a> · <a href="https://panel.davlestudio.com/privacy/orichalkos">Privacy</a> · <a href="mailto:studio@davlestudio.com">studio@davlestudio.com</a></p>
+<p>Google Play and Wear OS are trademarks of Google LLC. Galaxy Watch is a trademark of Samsung Electronics.</p></footer>
+
+</body></html>

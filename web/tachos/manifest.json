@@ -1,0 +1,196 @@
+{
+ "face": "TACHOS",
+ "face_id": "WF_DAVLE_TACHOS",
+ "package": "com.davle.tachos",
+ "capture_index": "/opt/factory/evidence/ops/TACHOS_STORE_SET_K11_20261021/captures/capture_index.json",
+ "k11_plan": "/opt/factory/panel/state/marketing/listings/tachos/k11_plan.json",
+ "hero_colour": "tachos_default",
+ "top_colour": "tachos_midnight",
+ "colours": [
+  {
+   "name": "default",
+   "tag": "tachos_default",
+   "hex": "#02A9F3",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_default.png",
+   "dial_webp": "dial_default.webp",
+   "theme_number": 1,
+   "hero": "hero_default.jpg",
+   "hero_webp": "hero_default.webp",
+   "hero_wide": "hero_wide_default.jpg",
+   "hero_wide_webp": "hero_wide_default.webp"
+  },
+  {
+   "name": "midnight",
+   "tag": "tachos_midnight",
+   "hex": "#0265A0",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_midnight.png",
+   "dial_webp": "dial_midnight.webp",
+   "theme_number": 2,
+   "top": "top_midnight.jpg",
+   "top_webp": "top_midnight.webp"
+  },
+  {
+   "name": "sky",
+   "tag": "tachos_sky",
+   "hex": "#7FC4DE",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_sky.png",
+   "dial_webp": "dial_sky.webp",
+   "theme_number": 3
+  },
+  {
+   "name": "racing_green",
+   "tag": "tachos_racing_green",
+   "hex": "#1E6B3F",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_racing_green.png",
+   "dial_webp": "dial_racing_green.webp",
+   "theme_number": 4
+  },
+  {
+   "name": "lemon",
+   "tag": "tachos_lemon",
+   "hex": "#E7C73E",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_lemon.png",
+   "dial_webp": "dial_lemon.webp",
+   "theme_number": 5
+  },
+  {
+   "name": "carbon",
+   "tag": "tachos_carbon",
+   "hex": "#D68A1D",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_carbon.png",
+   "dial_webp": "dial_carbon.webp",
+   "theme_number": 6
+  },
+  {
+   "name": "lilac",
+   "tag": "tachos_lilac",
+   "hex": "#A39AC4",
+   "hex_source": "K11 plan strap accent (measured from the certified simulation.png / plan override)",
+   "dial": "dial_lilac.png",
+   "dial_webp": "dial_lilac.webp",
+   "theme_number": 7
+  }
+ ],
+ "source_jobs": [
+  {
+   "colourway": "tachos_default",
+   "job_id": "wfsjob_20261019T080836Z_d8bd3029",
+   "simulation_png_sha256": "571c1dce0a00c2886a53555693c8406ac540dbc5042ea80e8bdbee32a19d8ce2",
+   "aod_png_sha256": "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212",
+   "project_sha256": "e125aa179ecd66e1880bf4e10da16ac083d563cf69e3a8f55dfb3730b38c8f2e"
+  },
+  {
+   "colourway": "tachos_midnight",
+   "job_id": "wfsjob_20261021T230236Z_b68c8bb8",
+   "simulation_png_sha256": "a3821eac4734828ecf4ab1ea6e2d03da4f1051206bba30917df02fda2aa33b0c",
+   "aod_png_sha256": "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212",
+   "project_sha256": "03d5dd0a439fe3d55204766d6b22a3c9277feed853b507871ee2f2af998aac08"
+  },
+  {
+   "colourway": "tachos_sky",
+   "job_id": "wfsjob_20261021T230348Z_c64a603b",
+   "simulation_png_sha256": "766a3bb70eea86d3ab1fc83cab7bf161ffba3d2214f235d765c9c547eb22dcd9",
+   "aod_png_sha256": "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212",
+   "project_sha256": "44ba37863509d62dc881382c6960bf18951f0c2bbf689e7a064096df56b3dcd6"
+  },
+  {
+   "colourway": "tachos_racing_green",
+   "job_id": "wfsjob_20261021T230504Z_37c815a7",
+   "simulation_png_sha256": "367688464ac1efa69ff8df27cbf594b4f92d03ad590093549aa0d89562840abf",
+   "aod_png_sha256": "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212",
+   "project_sha256": "86aa1fd009f65e7ab597afaf0c9d14830bae5cfcd02de7e270b9e2f842a088de"
+  },
+  {
+   "colourway": "tachos_lemon",
+   "job_id": "wfsjob_20261021T230617Z_f8a9e620",
+   "simulation_png_sha256": "91810e8eb2d8670b6ff29adc88d84eabc568dbe423e914faa59cab830ba245e6",
+   "aod_png_sha256": "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212",
+   "project_sha256": "9e1e425e76cb78109bb6da3d7aae6977395dc1e1543e261b6e4e482939aba37c"
+  },
+  {
+   "colourway": "tachos_carbon",
+   "job_id": "wfsjob_20261021T230733Z_037a9c08",
+   "simulation_png_sha256": "e5f4088832a5efd163fd7281bc942b912c2184798688b44a230f889c816dbc3a",
+   "aod_png_sha256": "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212",
+   "project_sha256": "4f36cb27d83707467634a78d9bd24ac6d98c49431890513c558c2b3701d8d6bc"
+  },
+  {
+   "colourway": "tachos_lilac",
+   "job_id": "wfsjob_20261021T230845Z_136b5557",
+   "simulation_png_sha256": "126079ee64838d6125ce71b80a31f23774005c81bab3926a38fbbf57bdfaea09",
+   "aod_png_sha256": "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212",
+   "project_sha256": "902c65c2b43c7a0a56fabda8c0955cf5345440635fbfa00ffc77dd1e2b4b4afb"
+  }
+ ],
+ "aod": "shared dial_aod (identical certified aod.png in every colourway)",
+ "aod_source_sha256": [
+  "3c0827d2a96070a67bb2214a4f534d09dc1d266c0b50908c384aefad8b956212"
+ ],
+ "scene_params": {
+  "hero": {
+   "scene": "S1",
+   "src_fmt": "4x5",
+   "k": 1.4814814814814814,
+   "body_scale": 0.632,
+   "screen_eq_share_of_width": 0.5,
+   "dial_capture_px_per_card_px": 2.248,
+   "strap_accent_rgb": [
+    2,
+    169,
+    243
+   ],
+   "strap_light_target": 46.0,
+   "jpg_q": 80,
+   "jpg_bytes": 350547,
+   "webp_bytes": 204358,
+   "webp_q": 82
+  },
+  "hero_wide": {
+   "scene": "S1",
+   "src_fmt": "9x16",
+   "k": 1.566,
+   "body_scale": 0.6681,
+   "screen_eq_share_of_width": 0.3058,
+   "dial_capture_px_per_card_px": 2.127,
+   "strap_accent_rgb": [
+    2,
+    169,
+    243
+   ],
+   "strap_light_target": 46.0,
+   "jpg_q": 82,
+   "jpg_bytes": 334579,
+   "webp_bytes": 178864,
+   "webp_q": 82,
+   "crop_x": 365
+  },
+  "top": {
+   "scene": "S4",
+   "src_fmt": "4x5",
+   "k": 1.4814814814814814,
+   "body_scale": 1.0,
+   "screen_eq_share_of_width": 0.3931,
+   "dial_capture_px_per_card_px": 2.863,
+   "strap_accent_rgb": [
+    2,
+    101,
+    160
+   ],
+   "strap_light_target": 33.66,
+   "jpg_q": 62,
+   "jpg_bytes": 349969,
+   "webp_bytes": 349418,
+   "webp_q": 82
+  }
+ },
+ "pipeline": "k11 scene library (slate_v2 compose_v2 + k11lib) rescaled; no text; dial pixels = certified captures; ai_calls=0",
+ "text_free": true,
+ "aod_file": "dial_aod.png",
+ "aod_file_webp": "dial_aod.webp"
+}
