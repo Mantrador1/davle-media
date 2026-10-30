@@ -1,0 +1,310 @@
+/* DAVLE site draft: shared stylesheet.
+   No external fonts, scripts or CDNs. System font stacks only, so it works offline.
+   Mobile-first: base rules are for a phone; larger screens only add width and spacing. */
+
+:root {
+  color-scheme: dark;
+  --bg: #0c0d0f;
+  --surface: #131518;
+  --line: #2a2c31;
+  --text: #e9e6df;
+  --muted: #a6a39b;
+  --accent: #c8a96b;
+  --accent-soft: #3a3226;
+  --measure: 40rem;
+  --gutter: 1.25rem;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --serif: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* Accessibility: skip link, focus ring */
+.skip {
+  position: absolute;
+  left: var(--gutter);
+  top: -4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  z-index: 10;
+}
+.skip:focus {
+  top: 0.5rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+a:hover {
+  color: var(--text);
+}
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem var(--gutter);
+}
+.site-header-inner {
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+.brand {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.site-nav {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  font-size: 0.875rem;
+}
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.25rem 0;
+}
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+}
+.site-nav a[aria-current="page"] {
+  border-bottom: 1px solid var(--accent);
+}
+
+/* Layout */
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2rem var(--gutter) 3rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+}
+h1 {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+h2 {
+  margin: 2.75rem 0 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--serif);
+  font-size: 1.375rem;
+}
+h3 {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+.lead {
+  font-size: 1.125rem;
+  color: var(--text);
+}
+.small,
+.fineprint {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+ul,
+ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.4rem;
+}
+li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.2rem;
+}
+li::marker {
+  color: var(--accent);
+}
+li > ul,
+li > ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Callout */
+.notice {
+  margin: 1.5rem 0;
+  padding: 1rem 1.125rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 2px;
+}
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
+/* Link styled as a quiet button */
+.button {
+  display: inline-block;
+  margin: 0.25rem 0 0.5rem;
+  padding: 0.625rem 1.125rem;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+.button:hover {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.contact {
+  margin-top: 2.5rem;
+  padding: 1rem 1.125rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+.contact p {
+  margin: 0;
+}
+
+code,
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  color: var(--text);
+  background: var(--surface);
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+  overflow-wrap: anywhere;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.75rem var(--gutter) 2.5rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.site-footer-inner {
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+.site-footer p {
+  margin: 0 0 0.5rem;
+}
+.site-footer .tagline {
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+/* Larger screens: more air, same single column */
+@media (min-width: 40em) {
+  :root {
+    --gutter: 2rem;
+  }
+  body {
+    font-size: 1.0625rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  main {
+    padding-top: 3.5rem;
+  }
+  .site-header-inner {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .site-nav {
+    margin-top: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  a {
+    color: #000;
+  }
+  .site-nav,
+  .skip {
+    display: none;
+  }
+}
+
+/* --- additions 2026-10-30 (K9): figure, cards, status, table --- */
+.status { display: inline-block; padding: 0.15rem 0.6rem; border: 1px solid var(--line); border-radius: 999px; font-size: 0.85rem; color: var(--muted); }
+.status.live { border-color: var(--accent); color: var(--accent); }
+.certified { margin: 1.5rem 0; }
+.certified img { display: block; width: 100%; max-width: 20rem; height: auto; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); }
+.certified figcaption { margin-top: 0.5rem; font-size: 0.85rem; color: var(--muted); }
+.cards { list-style: none; margin: 1.5rem 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: 1rem; }
+.cards li { margin: 0; padding: 0; }
+.cards a { display: block; text-decoration: none; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 0.5rem; padding: 0.8rem; height: 100%; }
+.cards a:hover { border-color: var(--accent); }
+.cards img { display: block; width: 100%; height: auto; border-radius: 50%; }
+.cards .name { display: block; margin-top: 0.6rem; font-weight: 600; letter-spacing: 0.04em; }
+.cards .status { margin-top: 0.4rem; }
+table.compat { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+table.compat th, table.compat td { text-align: left; border-bottom: 1px solid var(--line); padding: 0.5rem 0.4rem; vertical-align: top; }
+table.compat th { color: var(--muted); font-weight: 600; }
