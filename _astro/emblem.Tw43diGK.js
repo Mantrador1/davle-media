@@ -1,0 +1,10 @@
+function e(e){let t=e.querySelector(`img`);if(!t||!t.complete)return;let n=document.createElement(`canvas`),r=Math.min(devicePixelRatio||1,2),i=Math.round(e.clientWidth*r)||88;n.width=n.height=i;let a=n.getContext(`webgl2`,{antialias:!1,alpha:!1});if(!a)return;let o=(e,t)=>{let n=a.createShader(e);return a.shaderSource(n,t),a.compileShader(n),n},s=a.createProgram();if(a.attachShader(s,o(a.VERTEX_SHADER,`#version 300 es
+out vec2 uv;void main(){vec2 p=vec2((gl_VertexID<<1)&2,gl_VertexID&2);uv=vec2(p.x,1.-p.y);gl_Position=vec4(p*2.-1.,0,1);}`)),a.attachShader(s,o(a.FRAGMENT_SHADER,`#version 300 es
+precision mediump float;in vec2 uv;out vec4 o;uniform sampler2D t;uniform float l;
+float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n(vec2 p){vec2 i=floor(p),f=fract(p);f*=f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+1.),f.x),f.y);}
+void main(){vec4 c=texture(t,uv);float L=dot(c.rgb,vec3(.299,.587,.114));
+float f=n(vec2(uv.x*2.,uv.y*140.))*.6+n(vec2(uv.x*5.,uv.y*320.))*.4;
+float s=pow(max(0.,1.-abs(uv.x*.75+uv.y*.35-l)*4.),3.);
+vec3 m=c.rgb*(.86+.28*f)+vec3(1.,.98,.95)*s*(.25+.9*L)*(.55+.45*f);
+o=vec4(m,1.);}`)),a.linkProgram(s),!a.getProgramParameter(s,a.LINK_STATUS))return;a.useProgram(s);let c=a.createTexture();a.bindTexture(a.TEXTURE_2D,c),a.texImage2D(a.TEXTURE_2D,0,a.RGBA,a.RGBA,a.UNSIGNED_BYTE,t),a.texParameteri(a.TEXTURE_2D,a.TEXTURE_MIN_FILTER,a.LINEAR),a.texParameteri(a.TEXTURE_2D,a.TEXTURE_MAG_FILTER,a.LINEAR);let l=a.getUniformLocation(s,`l`);a.viewport(0,0,i,i);let u=e=>{a.uniform1f(l,e),a.drawArrays(a.TRIANGLES,0,3)};u(.5),e.append(n),t.style.visibility=`hidden`;let d=.5,f=0,p=e=>{d=e,f||=requestAnimationFrame(()=>{f=0,u(d)})};addEventListener(`pointermove`,e=>p(e.clientX/innerWidth*1.4-.2),{passive:!0}),addEventListener(`deviceorientation`,e=>e.gamma!=null&&p(.5+e.gamma/60),{passive:!0});let m=0,h=e=>{m||=e;let t=Math.min(1,(e-m)/1400);u(1.1-t*1),t<1&&requestAnimationFrame(h)};requestAnimationFrame(h)}export{e as start};
